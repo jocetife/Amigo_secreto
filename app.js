@@ -12,19 +12,20 @@ function agregarAmigo() {
         lista.push(name); 
         nuevo_amigo.value = ""; 
         mostrar_lista.innerHTML = "";
-        for (var i = 0; i < lista.length; i++){
-            let li = document.createElement("li");
-            li.textContent = lista[i];
-            mostrar_lista.appendChild(li);
-        }
-        console.log(lista)
+        actualizar_lista
     }
     else {
         alert ('Por favor, ingrese un nombre valido')
     }
     boton_sorteo.style.display = 'flex';
 }
-
+function actualizar_lista(){
+    for (var i = 0; i < lista.length; i++){
+        let li = document.createElement("li");
+        li.textContent = lista[i];
+        mostrar_lista.appendChild(li);
+    }
+}
 function sortearAmigo(){
     let mostrar_resultado = document.getElementById('resultado');
     let i = Math.floor(Math.random() * lista.length);
