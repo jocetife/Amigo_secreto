@@ -12,7 +12,7 @@ function agregarAmigo() {
         lista.push(name); 
         nuevo_amigo.value = ""; 
         mostrar_lista.innerHTML = "";
-        actualizar_lista
+        actualizar_lista();
     }
     else {
         alert ('Por favor, ingrese un nombre valido')
