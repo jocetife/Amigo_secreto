@@ -51,11 +51,3 @@ function reiniciado(){
 }
 
 boton_sorteo.style.display = 'none';
-
-
-
-// la lista esta vacia que no este disponible el boton de sortear amigo
-
-//if //hay un caracter en el campo de añadir que se ponga en color naranja
-
-//if //se presiono el boton de sortear amigo se quite y se ponga uno nuevo de reiniciar que borre la info de la lista
