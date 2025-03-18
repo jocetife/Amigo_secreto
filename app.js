@@ -11,7 +11,6 @@ function agregarAmigo() {
     if (name !== "") {
         lista.push(name); 
         nuevo_amigo.value = ""; 
-        mostrar_lista.innerHTML = "";
         actualizar_lista();
     }
     else {
@@ -20,6 +19,7 @@ function agregarAmigo() {
     boton_sorteo.style.display = 'flex';
 }
 function actualizar_lista(){
+    mostrar_lista.innerHTML = "";
     for (var i = 0; i < lista.length; i++){
         let li = document.createElement("li");
         li.textContent = lista[i];
